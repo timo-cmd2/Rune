@@ -5,6 +5,8 @@ int main( int argc, char **argv[] ) {
   int c;
   FILE *src;
   
+  size_t cap = 1, len = 1;
+
   if ( argc > 2 ) {
     fprintf( "Usage:  rune < foo.rune >\n" );
   }
