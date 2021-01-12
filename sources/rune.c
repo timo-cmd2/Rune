@@ -20,6 +20,12 @@ int main( int argc, char **argv[] ) {
     /** in rune mode: , una# 6op5 s|rce file */
   }
   
+  while ( ( c = fgets( src ) ) != EOF ) {
+    if ( c == 0xe2 ) {
+      return c;
+    }
+  }
+
   fopen( src );
   free ( /* tape or cell */ );
   return 0;
