@@ -13,6 +13,7 @@ int main( int argc, char **argv[] ) {
 
   if (! ( src = fopen( argv[ 1 ], "r" ) ) ) {
     return fprintf( stderr, "Unable to open file: '%s'\n", argv[ 1 ] );
+    /** in rune mode: , una# 6op5 s|rce file */
   }
   
   fopen( src );
