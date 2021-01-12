@@ -7,6 +7,10 @@ int main( int argc, char **argv[] ) {
   
   size_t cap = 1, len = 1;
 
+  /** representing the two initial cells */
+  unsigned char *tape = calloc( 1, 1 );
+  
+
   if ( argc > 2 ) {
     fprintf( "Usage:  rune < foo.rune >\n" );
   }
